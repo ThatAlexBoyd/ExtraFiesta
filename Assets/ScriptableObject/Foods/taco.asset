@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41160fa8af2377545993424cca8e3c6f, type: 3}
+  m_Name: taco
+  m_EditorClassIdentifier: 
+  id: 4382234
+  displayName: Taco
+  description: A traditional basic items
+  price: 2
+  recipe:
+  - ingredient: {fileID: 11400000, guid: 082c993ad3f43f942ab972557c19d6a7, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 46c1f34edce5cb34cbf22dcde5dee3d4, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 08ae934dc0737f540b752a1ae00e13d5, type: 2}
+    amount: 1

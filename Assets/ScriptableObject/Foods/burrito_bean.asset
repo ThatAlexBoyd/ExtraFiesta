@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41160fa8af2377545993424cca8e3c6f, type: 3}
+  m_Name: burrito_bean
+  m_EditorClassIdentifier: 
+  id: 6938883
+  displayName: Bean Burrito
+  description: Classic bean and cheese burrito
+  price: 3
+  recipe:
+  - ingredient: {fileID: 11400000, guid: 082c993ad3f43f942ab972557c19d6a7, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 8ed29537abc8ecc4a81cc7add8b21abe, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 08ae934dc0737f540b752a1ae00e13d5, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 7aba29fc83773db44a1cea2c850e3bec, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: f2572ce75a5333e4baa167b76547cc1e, type: 2}
+    amount: 1

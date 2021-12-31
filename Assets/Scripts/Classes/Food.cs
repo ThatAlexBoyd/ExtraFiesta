@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Food", menuName = "Food")]
-public class FoodScriptableObject : ScriptableObject
+public class Food : ScriptableObject
 {
     [SerializeField]
     private int id;
@@ -26,7 +26,7 @@ public class FoodScriptableObject : ScriptableObject
 public class RecipeItems
 {
     [SerializeField]
-    private IngredientScriptableObject ingredient;
+    private Ingredient ingredient;
 
     [SerializeField]
     private int amount;

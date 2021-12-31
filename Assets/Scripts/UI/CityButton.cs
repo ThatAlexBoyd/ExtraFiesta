@@ -1,16 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class CityButton : MonoBehaviour
+public class CityButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
-    private TMP_Text  label;
+    private TMP_Text label;
+
+    private City cityAssigned;
 
     public void SetupCityButton(City city)
     {
-        label.text = city.DisplayName;
+        cityAssigned = city;
+        label.text = cityAssigned.DisplayName;
     }
+
+    public void OnPointerClick(PointerEventData data)
+    {
+        GameController.Instance.CitySelected(cityAssigned);
+    }
+
+
 }

@@ -9,7 +9,7 @@ public class MapUI : MonoBehaviour
     private List<City> cityList = new List<City>();
 
     [SerializeField]
-    private CityButton cityButtonPrefab;
+    private GameObject cityButtonPrefab;
 
     [SerializeField]
     private GameObject mapPanel;
@@ -25,8 +25,8 @@ public class MapUI : MonoBehaviour
     {
         for (int i = 0; i < cityList.Count; i++)
         {
-            Instantiate(cityButtonPrefab, mapPanel.transform);
-            cityButtonPrefab.SetupCityButton(cityList[i]);
+            GameObject buttonPrefab = Instantiate(cityButtonPrefab, mapPanel.transform) as GameObject;
+            buttonPrefab.GetComponent<CityButton>().SetupCityButton(cityList[i]);
         }
     }
 }

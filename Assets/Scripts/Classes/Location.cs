@@ -14,5 +14,5 @@ public class Location : ScriptableObject
     [TextArea(1, 5)]
     private string description;
 
-    public string DisplayName { get => displayName; set => displayName = value; }
+    public string DisplayName { get => displayName;}
 }

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 public class CityButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
-    private TMP_Text label;
+    private TMP_Text label; //assigned in prefab
 
     private City cityAssigned;
 

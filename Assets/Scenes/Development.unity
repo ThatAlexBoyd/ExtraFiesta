@@ -226,8 +226,8 @@ GameObject:
   - component: {fileID: 453590705}
   - component: {fileID: 453590708}
   - component: {fileID: 453590707}
-  - component: {fileID: 453590706}
   - component: {fileID: 453590709}
+  - component: {fileID: 453590706}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -266,9 +266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aec744d9c87a64d8f4273fad7ba184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cityList:
-  - {fileID: 11400000, guid: 9f3e4cc3160c86145924735b621bdff5, type: 2}
-  - {fileID: 11400000, guid: bd05b8b39738e45429c5a97a99346005, type: 2}
   cityButtonPrefab: {fileID: 3049209196129371414, guid: bf3605b083a99124facc7bb5b635cdb3, type: 3}
   mapPanel: {fileID: 453590704}
 --- !u!114 &453590707
@@ -881,6 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headerPanel: {fileID: 234958401}
+  mapPanel: {fileID: 453590706}
 --- !u!4 &1844191712
 Transform:
   m_ObjectHideFlags: 0
@@ -894,4 +892,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1927629542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927629544}
+  - component: {fileID: 1927629543}
+  m_Layer: 0
+  m_Name: Game Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1927629543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927629542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b5afa405c04eb4eac625edefa035fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cityList:
+  - {fileID: 11400000, guid: 9f3e4cc3160c86145924735b621bdff5, type: 2}
+  - {fileID: 11400000, guid: bd05b8b39738e45429c5a97a99346005, type: 2}
+--- !u!4 &1927629544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927629542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 462.12732, y: 251.87172, z: -43.18731}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

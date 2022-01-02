@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MapUI : MonoBehaviour
+public class WorldMapUI : MonoBehaviour
 {
     [SerializeField]
     private GameObject cityButtonPrefab;

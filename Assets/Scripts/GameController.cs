@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     private HeaderUI headerPanel;
 
     [SerializeField]
-    private MapUI mapPanel;
+    private WorldMapUI worldMapUI;
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
     {
         CreatePlayer();
         SetHeaderVales();
-        CreateMap();
+        CreatWorldMap();
     }
 
     #region Setup Logic
@@ -45,9 +45,9 @@ public class GameController : MonoBehaviour
             Debug.Log("Loading saved game"); //load player data from save
     }
 
-    private void CreateMap()
+    private void CreatWorldMap()
     {
-        mapPanel.CreateMap();
+        worldMapUI.CreateMap();
     }
 
     private void SetHeaderVales()

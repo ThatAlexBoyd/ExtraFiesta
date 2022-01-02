@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
 
     private Location currentLocation;
 
+
     [Header("UI Elements")]
     public HeaderUI headerPanel;
 

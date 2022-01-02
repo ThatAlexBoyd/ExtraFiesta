@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class MapUI : MonoBehaviour
 {
     [SerializeField]
-    private List<City> cityList = new List<City>();
-
-    [SerializeField]
     private GameObject cityButtonPrefab;
 
     [SerializeField]
@@ -23,10 +20,12 @@ public class MapUI : MonoBehaviour
 
     private void CreateMap()
     {
-        for (int i = 0; i < cityList.Count; i++)
+        List<City> cityListCopy = GameData.Instance.CityList;
+
+        for (int i = 0; i < cityListCopy.Count; i++)
         {
             GameObject buttonPrefab = Instantiate(cityButtonPrefab, mapPanel.transform) as GameObject;
-            buttonPrefab.GetComponent<CityButton>().SetupCityButton(cityList[i]);
+            buttonPrefab.GetComponent<CityButton>().SetupCityButton(cityListCopy[i]);
         }
     }
 }

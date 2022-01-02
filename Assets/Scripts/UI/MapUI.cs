@@ -12,15 +12,9 @@ public class MapUI : MonoBehaviour
     private GameObject mapPanel;
 
 
-
-    private void Start()
+    public void CreateMap()
     {
-        CreateMap();
-    }
-
-    private void CreateMap()
-    {
-        List<City> cityListCopy = GameData.Instance.CityList;
+        List<City> cityListCopy = GameData.Instance.CityList; //cache city list from game data
 
         for (int i = 0; i < cityListCopy.Count; i++)
         {

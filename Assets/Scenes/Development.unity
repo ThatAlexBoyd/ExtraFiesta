@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 453590709}
   - component: {fileID: 453590706}
   m_Layer: 5
-  m_Name: Map
+  m_Name: World Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   headerPanel: {fileID: 234958401}
-  mapPanel: {fileID: 453590706}
+  worldMapUI: {fileID: 453590706}
 --- !u!4 &1844191712
 Transform:
   m_ObjectHideFlags: 0

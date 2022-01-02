@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
 
     private Player currentPlayer;
 
-    private Location currentCity;
+    private Marker currentCity;
 
     [Header("UI Elements")]
     [SerializeField]

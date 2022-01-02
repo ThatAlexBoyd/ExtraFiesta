@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Location : ScriptableObject
+public class Marker : ScriptableObject
 {
     [SerializeField]
     private int id;

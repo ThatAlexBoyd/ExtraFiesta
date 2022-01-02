@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "City", menuName = "City")]
-public class City : Location
+public class City : Marker
 {
     [SerializeField]
-    private List<Location> locations = new List<Location>();
+    private List<Marker> locations = new List<Marker>();
 }

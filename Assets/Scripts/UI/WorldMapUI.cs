@@ -12,14 +12,12 @@ public class WorldMapUI : MonoBehaviour
     private GameObject mapPanel;
 
 
-    public void CreateMap()
+    public void CreateMap(List<City> citiesToCreate)
     {
-        List<City> cityListCopy = GameData.Instance.CityList; //cache city list from game data
-
-        for (int i = 0; i < cityListCopy.Count; i++)
+        for (int i = 0; i < citiesToCreate.Count; i++)
         {
             GameObject buttonPrefab = Instantiate(cityButtonPrefab, mapPanel.transform) as GameObject;
-            buttonPrefab.GetComponent<CityButton>().SetupCityButton(cityListCopy[i]);
+            buttonPrefab.GetComponent<CityButton>().SetupCityButton(citiesToCreate[i]);
         }
     }
 }

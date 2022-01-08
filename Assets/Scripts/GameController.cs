@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     private static GameController instance;
     public static GameController Instance { get { return instance; } }
 
+    public GameData gameData;
+
     private Player currentPlayer;
 
     private Marker currentCity;
@@ -47,7 +49,7 @@ public class GameController : MonoBehaviour
 
     private void CreatWorldMap()
     {
-        worldMapUI.CreateMap();
+        worldMapUI.CreateMap(gameData.CityList);
     }
 
     private void SetHeaderVales()

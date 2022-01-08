@@ -15,11 +15,11 @@ public class GameController : MonoBehaviour
     private Marker currentCity;
 
     [Header("UI Elements")]
-    [SerializeField]
-    private HeaderUI headerPanel;
+    [SerializeField] private HeaderUI headerPanel;
 
-    [SerializeField]
-    private WorldMapUI worldMapUI;
+    [SerializeField] private WorldMapUI worldMap;
+
+    [SerializeField] private CityMapUI cityMap;
 
     private void Awake()
     {
@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour
 
     private void CreatWorldMap()
     {
-        worldMapUI.CreateMap(gameData.CityList);
+        worldMap.CreateMap(gameData.CityList);
     }
 
     private void SetHeaderVales()

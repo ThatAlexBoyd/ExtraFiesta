@@ -7,6 +7,5 @@ public class GameData : MonoBehaviour
 
     public List<City> CityList { get => cityList;}
 
-    [SerializeField]
-    private List<City> cityList = new List<City>();
+    [SerializeField] private List<City> cityList = new List<City>();
 }

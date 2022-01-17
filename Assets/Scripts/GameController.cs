@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
 
     private Player currentPlayer;
 
-    private Marker currentCity;
+    private City currentCity;
 
     [Header("UI Elements")]
     [SerializeField] private HeaderUI headerPanel;
@@ -52,6 +52,11 @@ public class GameController : MonoBehaviour
         worldMap.CreateMap(gameData.CityList);
     }
 
+    private void CreatCityMap()
+    {
+        cityMap.CreateMap(currentCity.Locations);
+    }
+
     private void SetHeaderVales()
     {
         headerPanel.InitializeHeader(currentPlayer.TruckName, currentPlayer.Money);
@@ -62,5 +67,7 @@ public class GameController : MonoBehaviour
     public void CitySelected(City citySelected)
     {
         currentCity = citySelected;
+        worldMap.ToggleMap(false);
+        CreatCityMap();
     }
 }

@@ -15,3 +15,13 @@ MonoBehaviour:
   id: 5892007
   displayName: Test Shop
   description: The old test shop in town
+  shopInventory:
+    keys:
+    - {fileID: 11400000, guid: 8ed29537abc8ecc4a81cc7add8b21abe, type: 2}
+    - {fileID: 11400000, guid: 08ae934dc0737f540b752a1ae00e13d5, type: 2}
+    - {fileID: 11400000, guid: f2572ce75a5333e4baa167b76547cc1e, type: 2}
+    - {fileID: 11400000, guid: 46c1f34edce5cb34cbf22dcde5dee3d4, type: 2}
+    - {fileID: 11400000, guid: 7aba29fc83773db44a1cea2c850e3bec, type: 2}
+    - {fileID: 11400000, guid: 082c993ad3f43f942ab972557c19d6a7, type: 2}
+    - {fileID: 11400000, guid: 0ea12345502158840a2bc2d68f323902, type: 2}
+    values: e7030000e7030000e7030000e7030000e7030000e7030000e7030000

@@ -15,4 +15,5 @@ MonoBehaviour:
   id: 1320784
   displayName: Testing City A
   description: A city used to test the game
-  locations: []
+  locations:
+  - {fileID: 11400000, guid: f1d15e9c99fc32946b12bdf987e23543, type: 2}

@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class CityMapUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    private GameObject locationButtonPrefab;
+
+    [SerializeField]
+    private GameObject cityMapPanel;
+
+
+    public void CreateMap(List<Marker> locationToCreate)
     {
-        
+        ToggleMap(true);
+
+        for (int i = 0; i < locationToCreate.Count; i++)
+        {
+            GameObject buttonPrefab = Instantiate(locationButtonPrefab, cityMapPanel.transform) as GameObject;
+            buttonPrefab.GetComponent<LocationButton>().SetupLocationButton(locationToCreate[i]);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToggleMap(bool status)
     {
-        
+        cityMapPanel.SetActive(status);
     }
+
 }

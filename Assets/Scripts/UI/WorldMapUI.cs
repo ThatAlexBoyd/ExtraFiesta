@@ -9,15 +9,20 @@ public class WorldMapUI : MonoBehaviour
     private GameObject cityButtonPrefab;
 
     [SerializeField]
-    private GameObject mapPanel;
+    private GameObject worldMapPanel;
 
 
     public void CreateMap(List<City> citiesToCreate)
     {
         for (int i = 0; i < citiesToCreate.Count; i++)
         {
-            GameObject buttonPrefab = Instantiate(cityButtonPrefab, mapPanel.transform) as GameObject;
+            GameObject buttonPrefab = Instantiate(cityButtonPrefab, worldMapPanel.transform) as GameObject;
             buttonPrefab.GetComponent<CityButton>().SetupCityButton(citiesToCreate[i]);
         }
+    }
+
+    public void ToggleMap(bool status)
+    {
+        worldMapPanel.SetActive(status);
     }
 }

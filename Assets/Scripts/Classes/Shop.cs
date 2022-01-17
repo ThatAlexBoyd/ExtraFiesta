@@ -5,8 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Shop", menuName = "Shop")]
 public class Shop : Marker
 {
-    //what it selling
-    //how much of that item
+    [SerializeField] private IngredientIntDictionary shopInventory;
     //price variation (region?)
     //restocking timer
 }
+
+[System.Serializable]
+public class IngredientIntDictionary:UDictionary<Ingredient,int> { } //subclass for dictionary to show in editor
